@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Reportes</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <%- include('../home/vistas.ejs') %>
+
+    <div class="row">
+      <div class="col-md-6 mt-4 text-center">
+        <table class="table table-striped table-bordered">
+          <tr>
+            <th>Tarjeta</th>
+            <th>Numero_de_Tarjeta</th>
+            <th>Fecha_de_Expiracion</th>
+            <th>Codigo_CVC</th>
+            <th>IdUsuario</th>
+          </tr>
+          <% for (var i = 0; i < view3.length; i ++) { %>
+          <tr>
+            <td><%- view3[i].Tarjeta %></td>
+            <td><%- view3[i].Numero_de_Tarjeta %></td>
+            <td><%- view3[i].Fecha_de_Expiracion %></td>
+            <td><%- view3[i].Codigo_CVC %></td>
+            <td><%- view3[i].IdUsuario %></td>
+          </tr>
+          <% } %>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
