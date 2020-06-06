@@ -18,16 +18,16 @@
         <table class="table table-striped table-bordered">
           <tr>
             <th>Usuario</th>
-            <th>Fecha_Ingreso</th>
+            <th>Fecha Ingreso</th>
             <th>Nombre</th>
-            <th>CorreoElectronico</th>
+            <th>Correo Electronico</th>
           </tr>
           <% for (var i = 0; i < view2.length; i ++) { %>
           <tr>
-            <td><%- view2[i].Tarjeta %></td>
-            <td><%- view2[i].Numero_de_Tarjeta %></td>
-            <td><%- view2[i].Fecha_de_Expiracion %></td>
-            <td><%- view2[i].CorreoElectronico %></td>
+            <td><%- view2[i].Usuario %></td>
+            <td><%- view2[i].Fecha_Ingreso %></td>
+            <td><%- view2[i].Nombre %></td>
+            <td><%- view2[i].Correo_Electronico %></td>
           </tr>
           <% } %>
         </table>
