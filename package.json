@@ -8,7 +8,7 @@
     "dev": "nodemon src/index.js"
   },
   "keywords": [],
-  "author": "Fernando Guerra Manzano",
+  "author": "Luis Fernando Guerra Manzano",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
