@@ -5,7 +5,7 @@ module.exports = app => {
   const connection = dbConnection();
 
   app.get('/view2', (req, res) => {
-    connection.query('SELECT * FROM IngresosUsuarios', (err, result) => {
+    connection.query('SELECT * FROM CancionesMasEscuchadas', (err, result) => {
       res.render('views/view2', {
         view2: result
       });

@@ -17,17 +17,17 @@
       <div class="col-md-6 mt-4 text-center">
         <table class="table table-striped table-bordered">
           <tr>
-            <th>Usuario</th>
-            <th>Fecha Ingreso</th>
-            <th>Nombre</th>
-            <th>Correo Electronico</th>
+            <th>Cancion</th>
+            <th>Album</th>
+            <th>Artista</th>
+            <th>Cantidad de veces escuchado</th>
           </tr>
           <% for (var i = 0; i < view2.length; i ++) { %>
           <tr>
-            <td><%- view2[i].Usuario %></td>
-            <td><%- view2[i].Fecha_Ingreso %></td>
-            <td><%- view2[i].Nombre %></td>
-            <td><%- view2[i].Correo_Electronico %></td>
+            <td><%- view2[i].Cancion %></td>
+            <td><%- view2[i].Album %></td>
+            <td><%- view2[i].Artista %></td>
+            <td><%- view2[i].Cantidad_veces_escuchado %></td>
           </tr>
           <% } %>
         </table>
