@@ -17,19 +17,19 @@
       <div class="col-md-6 mt-4 text-center">
         <table class="table table-striped table-bordered">
           <tr>
-            <th>Tarjeta</th>
-            <th>Numero de Tarjeta</th>
-            <th>Fecha de Expiracion</th>
-            <th>Codigo CVC</th>
-            <th>IdUsuario</th>
+            <th>Artista</th>
+            <th>Nombre de Artista</th>
+            <th>Correo Electronico</th>
+            <th>Fecha de Inicio</th>
+            <th>Genero</th>
           </tr>
           <% for (var i = 0; i < view3.length; i ++) { %>
           <tr>
-            <td><%- view3[i].Tarjeta %></td>
-            <td><%- view3[i].Numero_de_Tarjeta %></td>
-            <td><%- view3[i].Fecha_de_Expiracion %></td>
-            <td><%- view3[i].Codigo_CVC %></td>
-            <td><%- view3[i].IdUsuario %></td>
+            <td><%- view3[i].Artista %></td>
+            <td><%- view3[i].Nombre_Artista %></td>
+            <td><%- view3[i].Correo_Electronico %></td>
+            <td><%- view3[i].Fecha_Inicio %></td>
+            <td><%- view3[i].Genero %></td>
           </tr>
           <% } %>
         </table>
